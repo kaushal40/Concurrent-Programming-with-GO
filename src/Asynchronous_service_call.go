@@ -14,6 +14,8 @@ import (
 )
 
 //main function should know till what time it should run so that it will not terminate before the goroutines completed
+// you can use number of CPU if you know the nuber of cores your machine is running on. to take advantage of parralism
+//runtime.GOMAXCOREPROC("number of CPU")
 func main() {
 
 	//tracking variables for go routine
